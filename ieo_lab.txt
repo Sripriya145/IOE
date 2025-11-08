@@ -44,3 +44,33 @@ This buzzer is active, so when Pin 9 → HIGH, buzzer turns ON.
 When Pin 9 → LOW, buzzer turns OFF.
 
 Your code works perfectly with this connection.
+
+---------------
+5.a. Hardware Experiment
+
+void setup() {
+  pinMode (8, OUTPUT);
+  pinMode (9, OUTPUT);
+  pinMode (10, OUTPUT);
+  pinMode (11, OUTPUT);
+}
+void loop() {
+  digitalWrite(8, HIGH);
+  delay(5);
+  digitalWrite(8, LOW);
+  delay(5);
+  digitalWrite(9, HIGH);
+  delay(5);
+  digitalWrite(9, LOW);
+  delay(5);
+  digitalWrite(10, HIGH);
+  delay(5);
+  digitalWrite(10, LOW);
+  delay(5);
+  digitalWrite(11, HIGH);
+  delay(5);
+  digitalWrite(11, LOW);
+  delay(5);
+}
+
+
