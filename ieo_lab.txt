@@ -8,3 +8,39 @@
 7 - https://wokwi.com/projects/444673169451588609
 3-a, 4-a - https://wokwi.com/projects/446853596291578881
 6b - https://wokwi.com/projects/444674449555718145 
+
+
+---------------------------------
+3a,4a
+Understood. You have a 3-pin Active Buzzer Module (VCC, I/O, GND).
+Your code uses Pin 9 to control the buzzer.
+So connect it like this:
+
+Buzzer Module (3-Pin)
+---------------------
+VCC → 5V
+I/O → D9  (buzzerPin)
+GND → GND
+
+LM35 Temperature Sensor
+-----------------------
+Pin 1 (left)  → 5V
+Pin 2 (middle) → A0 (tempSensorPin)
+Pin 3 (right) → GND
+
+
+Complete Wiring:
+
+Component	Pin	Connect To
+LM35	Left pin	5V
+LM35	Middle pin	A0
+LM35	Right pin	GND
+Buzzer Module	VCC	5V
+Buzzer Module	I/O	Digital Pin 9
+Buzzer Module	GND	GND
+
+Note:
+This buzzer is active, so when Pin 9 → HIGH, buzzer turns ON.
+When Pin 9 → LOW, buzzer turns OFF.
+
+Your code works perfectly with this connection.
